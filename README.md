@@ -95,7 +95,10 @@ export DB_CONN_STR=<db_connection_string> # e.g. postgresql://username:password@
 #### Apply Database Schema
 
 Using migrations, apply the database schema and relationships by executing:
-
+```psql
+~psql
+db.create_all()
+```
 ```bash
 flask db migrate
 flask db upgrade
@@ -106,8 +109,8 @@ flask db upgrade
 Prepare the development environment by executing:
 
 ```bash
-export FLASK_APP=app
-export FLASK_ENV=development
+set FLASK_APP=app
+set FLASK_ENV=development
 ```
 
 To run the server at any time, use:

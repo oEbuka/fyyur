@@ -9,5 +9,4 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # Connect to the database
 # Make sure DATABASE URI is set
-SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:Epostgres12@localhost:5432/fyyur'
-
+SQLALCHEMY_DATABASE_URI = 'postgresql://myusername:mypassword@localhost:5432/mydatabase'
